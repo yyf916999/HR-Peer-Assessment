@@ -22,8 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = 'django-insecure-ho55p4p=jazi#d#m32yil_ba*vqvia$bcz&-14b1ca9=gyx!5i'
+#from decouple import config
 
+SECRET_KEY = 'django-insecure-ho55p4p=jazi#d#m32yil_ba*vqvia$bcz&-14b1ca9=gyx!5i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,8 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig',
-    'crispy_forms',
+    'users.apps.UsersConfig'
 ]
 
 MIDDLEWARE = [
